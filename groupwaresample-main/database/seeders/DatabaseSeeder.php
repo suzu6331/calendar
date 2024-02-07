@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+//php artisan migrate --seed　コマンド
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
