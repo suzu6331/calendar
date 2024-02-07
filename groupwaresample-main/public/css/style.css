@@ -1,0 +1,54 @@
+[v-cloak] {
+    display: none;
+}
+body {
+    font-family: 'Kosugi', sans-serif;
+}
+.title {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #7db4e6;/*左線*/
+}
+.material-symbols-outlined {
+    vertical-align: text-bottom;
+    font-size: inherit !important;
+}
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: .8;
+}
+.loader {
+    border: 8px solid #3498db;
+    border-top: 8px solid #f1c40f;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 0.3s linear infinite;
+}
+#loading-screen .message {
+    color: #fff;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+td.fc-day-sat {
+    background-color: #eaf4ff;
+}
+td.fc-day-sun {
+    background-color: #ffeaea;
+}
+a.fc-event, a.fc-daygrid-day-number {
+    cursor: pointer;
+}
